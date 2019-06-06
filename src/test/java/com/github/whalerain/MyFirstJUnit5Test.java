@@ -2,6 +2,7 @@ package com.github.whalerain;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +30,10 @@ class MyFirstJUnit5Test {
         System.out.println("if print this, you need to check your @Disabled method");
     }
 
+    @RepeatedTest(value = 10)
+    void testRepeated() {
 
+    }
 
 
 
